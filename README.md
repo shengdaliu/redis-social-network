@@ -82,7 +82,7 @@ The server will be running on port 8080.
 ## Authors
 
 * **Shengda Liu** - *Initial work* - [shengdaliu](https://github.com/shengdaliu)
-* **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
+* **Yohan Maurin** - *Complementary works* - [YOHANMAURIN](https://github.com/YOHANMAURIN)
 * **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
 * **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
 * **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
