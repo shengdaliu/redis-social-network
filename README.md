@@ -48,32 +48,54 @@ The server will be running on port 8080.
 
 ## Some API endpoint examples
 
-* <code>GET</code> /user/:uid
+* <code>PUT</code> /api/createUser/3?location=Paris&name=Shengda&age=25&gender=M&email=test@test.com&postal=11 rue du test
+
+    This endpoint will create a new user with 3 as UID.
+***
+* <code>GET</code> /api/user/:uid
 
     This endpoint will informations on user with uid as UID.
 ***
-* <code>PUT</code> /createUser/user2?name=Shengda&age=25&gender=M&email=test@test.com&location=Paris
+* <code>GET</code> /api/user/:uid/sentList
 
-    This endpoint will create a new user with user2 as UID.
+    This endpoint will get a list of friend invitation sent by a user.
 ***
-<!-- * <code>GET</code> /stock/distinct?key=description.Country
+* <code>GET</code> /api/user/:uid/receivedList
 
-    This endpoint will return a list of name of distinct countries of all collections.
+    This endpoint will get a list of received friend invitation by a user.
 ***
-* <code>GET</code> /stock/findRegex?Company=Apple
+* <code>GET</code> /api/user/:uid/friendList
 
-    Return a list of company with "apple" in their Company key.
+    This endpoint will get the friend list of a user.
 ***
-* <code>GET</code> /stock/aggregateChange?description.Country=France
+* <code>GET</code> /api/user/:uid/postList
 
-    Return average, min and max of 24h Change of Country France.
+    This endpoint will get status posts' list of a user.
 ***
-* <code>GET</code> /stock/aggregateAvgVolume?description.Country=France
+* <code>GET</code> /api/user/:uid/postList
 
-    Return average, min and max of 24h volume of Country France. -->
+    This endpoint will get comment list of a specific post of a specific user.
+***
+* <code>POST</code> /api/user/:uid/addFriend?friendId=1
 
+    This endpoint will post a friend request from user with :uid as ID to another user with 1 as ID.
+***
+* <code>POST</code> /api/user/:uid/acceptRequest?friendId=2
 
-<!-- Same for aggregateROI, aggregate20Days, aggregate200Days. -->
+    This endpoint will post an acceptance of a friend request (From user 2 in this case).
+***
+* <code>POST</code> /api/user/:uid/deleteFriend?friendId=2
+
+    This endpoint will delete a friend with a specific friend ID. The deletion is on both side.
+***
+* <code>POST</code> /api/user/:uid/addPost?message=Ich habe ein Kartoffelsalat gegessen.
+
+    This endpoint will post a new status post update.
+***
+* <code>POST</code> /api/user/:uid/addComment?postId=user:1:post:5&message=Wunderbar !
+
+    This endpoint will post a comment on a specific post of a specific user.
+
 
 <!-- ## Contributing -->
 

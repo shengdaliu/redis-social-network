@@ -36,7 +36,7 @@ router.get('/user/:uid', (req, res) => {
     res.send(JSON.stringify(obj));
   });
 });
-// Get friend invitation sent list of a user
+// Get a list of friend invitation sent by a user
 router.get('/user/:uid/sentList', (req, res) => {
 
   var uid = req.params.uid;
@@ -51,7 +51,7 @@ router.get('/user/:uid/sentList', (req, res) => {
     res.send(JSON.stringify(reply));
   });
 });
-// Get received friend invitation list of a user
+// Get a list of received friend invitation by a user
 router.get('/user/:uid/receivedList', (req, res) => {
 
   var uid = req.params.uid;
