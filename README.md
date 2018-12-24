@@ -48,10 +48,15 @@ The server will be running on port 8080.
 
 ## Some API endpoint examples
 
+### PUT
+
 * <code>PUT</code> /api/createUser/3?location=Paris&name=Shengda&age=25&gender=M&email=test@test.com&postal=11 rue du test
 
     This endpoint will create a new user with 3 as UID.
 ***
+
+### GET
+
 * <code>GET</code> /api/user/:uid
 
     This endpoint will informations on user with uid as UID.
@@ -76,6 +81,9 @@ The server will be running on port 8080.
 
     This endpoint will get comment list of a specific post of a specific user.
 ***
+
+### POST
+
 * <code>POST</code> /api/user/:uid/addFriend?friendId=1
 
     This endpoint will post a friend request from user with :uid as ID to another user with 1 as ID.
