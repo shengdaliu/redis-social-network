@@ -113,7 +113,7 @@ The server will be running on port 8080.
 
 * **Shengda Liu** - *Initial work* - [shengdaliu](https://github.com/shengdaliu)
 * **Yohan Maurin** - *Complementary works* - [YOHANMAURIN](https://github.com/YOHANMAURIN)
-* **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
+* **Antoine Dupuis** - *Complementary works* - [dupduplarafan2](https://github.com/dupduplarafan2)
 * **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
 * **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
 
