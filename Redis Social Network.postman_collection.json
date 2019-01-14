@@ -1,0 +1,349 @@
+{
+	"info": {
+		"_postman_id": "c75bf854-fdd5-44e1-a2a0-fff662c81858",
+		"name": "Redis Social Network",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET User by UID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sentList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/sentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"sentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET receivedList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/2/receivedList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2",
+						"receivedList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET friendList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/friendList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"friendList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET postList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/postList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"postList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET commentList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/post/5/commentList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"post",
+						"5",
+						"commentList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Accept Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/2/acceptRequest?friendId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2",
+						"acceptRequest"
+					],
+					"query": [
+						{
+							"key": "friendId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add Friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/addFriend?friendId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"addFriend"
+					],
+					"query": [
+						{
+							"key": "friendId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add a status post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/1/addPost?message=Ich habe ein Kartoffelsalat gegessen.",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"1",
+						"addPost"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "Ich habe ein Kartoffelsalat gegessen."
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Add a comment on post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/2/addComment?postId=user:1:post:5&message=Wunderbar !",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2",
+						"addComment"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "user:1:post:5"
+						},
+						{
+							"key": "message",
+							"value": "Wunderbar !"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/createUser/3?location=Paris&name=Shengda&age=25&gender=M&email=test@test.com&postal=11 rue du test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"createUser",
+						"3"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Paris"
+						},
+						{
+							"key": "name",
+							"value": "Shengda"
+						},
+						{
+							"key": "age",
+							"value": "25"
+						},
+						{
+							"key": "gender",
+							"value": "M"
+						},
+						{
+							"key": "email",
+							"value": "test@test.com"
+						},
+						{
+							"key": "postal",
+							"value": "11 rue du test"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
