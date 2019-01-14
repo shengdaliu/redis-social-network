@@ -115,7 +115,7 @@ The server will be running on port 8080.
 * **Yohan Maurin** - *Complementary works* - [YOHANMAURIN](https://github.com/YOHANMAURIN)
 * **Antoine Dupuis** - *Complementary works* - [dupduplarafan2](https://github.com/dupduplarafan2)
 * **Luc Bertin** - *Complementary works* - [name](https://github.com/Luc-Bertin)
-* **Prenom Nom** - *Complementary works* - [name](https://github.com/name)
+* **Michel Gawron** - *Complementary works* - [michelgawron](https://github.com/michelgawron)
 
 See also the list of [contributors]() who participated in this project.
 
